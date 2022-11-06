@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Dfs {
 	
 	static Scanner in = new Scanner(System.in);
-	static int[][] graph, time;
-	static int[] visited, parent;
-	static int e, v, t = 0;
+	static int[][] graph;
+	static int[] visited;
+	static int e, v;
 	
 	static void dfs(int source) {
 		
@@ -26,9 +26,7 @@ public class Dfs {
 		e = in.nextInt();
 		
 		graph = new int[v][v];
-		time = new int[v][2];
 		visited = new int[v];
-		parent = new int[v];
 		
 		for(int i = 0; i < e; i++) {
 			
